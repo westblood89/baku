@@ -9,7 +9,7 @@
         :root {
             --primary: #007AFF; /* Mavi */
             --accent: #FF3B30; /* Kırmızı */
-            --alt: #9C27B0; /* Mor - Alternatifler için */
+            --alt: #9C27B0; /* Mor */
             --bg: #F2F2F7;
             --card-bg: #FFFFFF;
             --text: #1C1C1E;
@@ -229,7 +229,7 @@
 </header>
 
 <div class="tabs">
-    <button class="tab-btn active" onclick="openTab('gun1', this)">1. GÜN (Cuma)</button>
+    <button class="tab-btn active" onclick="openTab('gun1', this)">1. GÜN (Cum)</button>
     <button class="tab-btn" onclick="openTab('gun2', this)">2. GÜN (Cmt)</button>
     <button class="tab-btn" onclick="openTab('gun3', this)">3. GÜN (Paz)</button>
     <button class="tab-btn" onclick="openTab('gun4', this)">4. GÜN (Pzt)</button>
@@ -406,7 +406,7 @@
 
 <div id="gun3" class="tab-content">
     
-    <div class="transport-note">🚕 Ulaşım: Bugün mesafeler uzak. "Bolt" kullanın.</div>
+    <div class="transport-note">🛍️ Alışveriş Günü: Bugün Yaşıl Bazar ve AVM'ler.</div>
 
     <div class="timeline-block" style="border-left-color: #F59E0B;">
         <span class="time-tag">09:00 - KAHVALTI</span>
@@ -414,34 +414,19 @@
             <h3 class="block-title">Old Garden Restaurant</h3>
             <a href="https://www.google.com/maps/search/?api=1&query=Old+Garden+Baku" target="_blank" class="map-link">📍 Haritada Aç</a>
         </div>
+        <div class="desc">Surların dibinde, açık havada güzel bir serpme kahvaltı.</div>
     </div>
 
     <div class="timeline-block">
         <span class="time-tag">10:30 - 13:00</span>
         <div class="block-header">
-            <h3 class="block-title">Haydar Aliyev Merkezi</h3>
-            <a href="https://www.google.com/maps/search/?api=1&query=Heydar+Aliyev+Centre" target="_blank" class="map-link">📍 Haritada Aç</a>
+            <h3 class="block-title">Yaşıl Bazar (Yeşil Pazar)</h3>
+            <a href="https://www.google.com/maps/search/?api=1&query=Yasil+Bazar+Baku" target="_blank" class="map-link">📍 Haritada Aç</a>
         </div>
-        <div class="desc"><b>Bolt çağır ve git.</b> Meşhur beyaz bina. Fotoğraf için mükemmel.</div>
-        
-        <button class="alt-btn" onclick="toggleMenu('alt3')">🔄 Sadece Bina Görmek İstemezsen? (Alternatifler)</button>
-        <div id="alt3" class="hidden-alt">
-            <div style="border-bottom:1px solid #ddd; padding-bottom:5px; margin-bottom:5px;">
-                <div style="font-weight:bold;">Seçenek A: Tağıyev Sarayı (Tarih Müzesi)</div>
-                <div style="font-size:12px; color:#555;">Merkezde, yürüme mesafesinde. İçi altın varaklı, saray gibi bir ev. Tarih sevene.</div>
-                <a href="https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipPeJl-nhie-g1k_gsTM90y62YAibp-tPoU1Y4ad!2e10!4m2!3m1!1s0x40307da4b2521c03:0x99a365765da8df61" target="_blank" class="map-link" style="margin-top:3px; width:fit-content;">📍 Saraya Git</a>
-            </div>
-            <div style="border-bottom:1px solid #ddd; padding-bottom:5px; margin-bottom:5px;">
-                <div style="font-weight:bold;">Seçenek B: Hərbi Qənimətlər Parkı</div>
-                <div style="font-size:12px; color:#555;">Savaş ganimetleri, tanklar, toplar açık havada sergileniyor.</div>
-                <a href="https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOwSGjltLGpsJBYTJmXv696ndKjqfSViNxGSoIo!2e10!4m2!3m1!1s0x40307da4b2521c03:0x99a365765da8df61" target="_blank" class="map-link" style="margin-top:3px; width:fit-content;">📍 Parka Git</a>
-            </div>
-            <div>
-                <div style="font-weight:bold;">Seçenek C: Baku Eye & Deniz Mall</div>
-                <div style="font-size:12px; color:#555;">Dönme dolaba binip şehri izlemek ve AVM gezmek isterseniz.</div>
-                <a href="https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipNaLrowra2NTEkWim8pHr-tWo5R2iOh9HdnCW7w!2e10!4m2!3m1!1s0x40307da4b2521c03:0x99a365765da8df61" target="_blank" class="map-link" style="margin-top:3px; width:fit-content;">📍 Dönme Dolaba Git</a>
-            </div>
-        </div>
+        <div class="desc"><b>Bolt çağır ve git.</b> (10-15 dk). Burası turist değil, gerçek yerel pazar. Her şeyi tadarak alabilirsiniz.</div>
+        <ul class="detail-list">
+            <li>🛒 <b>Alınacaklar:</b> Havyar, Safran, Çay, Nar Şarabı. ("Ne Alınır" sekmesine bak.</li>
+        </ul>
     </div>
 
     <div class="timeline-block" style="border-left-color: #F59E0B;">
@@ -451,16 +436,34 @@
                 <div class="food-info"><strong>Vapiano</strong><span class="price-badge price-mid">ORTA</span></div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Vapiano+Baku" target="_blank" class="map-link">Git</a>
             </div>
+            <div class="desc">28 Mall AVM'nin yanında. İtalyan mutfağı.</div>
+        </div>
+        <div class="food-item">
+            <div class="food-header">
+                <div class="food-info"><strong>Anadolu Restaurant</strong><span class="price-badge price-mid">ORTA</span></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Anadolu+Restaurant+Baku" target="_blank" class="map-link">Git</a>
+            </div>
         </div>
     </div>
 
     <div class="timeline-block">
-        <span class="time-tag">16:00 - 18:30</span>
+        <span class="time-tag">15:00 - 18:30</span>
         <div class="block-header">
-            <h3 class="block-title">Dağüstü Park (Highland Park)</h3>
-            <a href="https://www.google.com/maps/search/?api=1&query=Highland+Park+Baku" target="_blank" class="map-link">📍 Haritada Aç</a>
+            <h3 class="block-title">28 Mall veya Port Baku</h3>
         </div>
-        <div class="desc"><b>Bolt ile en tepeye git.</b> Tüm Bakü ayaklarının altında.</div>
+        <div class="desc">Alışveriş turuna devam.</div>
+        <div class="food-item">
+            <div class="food-header">
+                <div class="food-info"><strong>28 Mall</strong><span> (Normal Markalar, Tax Free sor)</span></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=28+Mall+Baku" target="_blank" class="map-link">Git</a>
+            </div>
+        </div>
+        <div class="food-item">
+            <div class="food-header">
+                <div class="food-info"><strong>Port Baku Mall</strong><span> (Çok Lüks Markalar)</span></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Port+Baku+Mall" target="_blank" class="map-link">Git</a>
+            </div>
+        </div>
     </div>
 
     <div class="timeline-block" style="border-left-color: #F59E0B;">
@@ -483,36 +486,62 @@
 
 <div id="gun4" class="tab-content">
     
-    <div class="transport-note">🛍️ Alışveriş & Dönüş Günü. Bavulları otele emanete bırakın.</div>
+    <div class="transport-note">🚶 Manzara & Kültür Günü. Öğlen Çıkış Var!</div>
 
     <div class="timeline-block">
-        <span class="time-tag">09:30 - 12:00</span>
+        <span class="time-tag">09:00 - 11:30</span>
         <div class="block-header">
-            <h3 class="block-title">Yaşıl Bazar (Yeşil Pazar)</h3>
-            <a href="https://www.google.com/maps/search/?api=1&query=Yasil+Bazar+Baku" target="_blank" class="map-link">📍 Haritada Aç</a>
+            <h3 class="block-title">Dağüstü Park (Highland Park)</h3>
+            <a href="https://www.google.com/maps/search/?api=1&query=Highland+Park+Baku" target="_blank" class="map-link">📍 Haritada Aç</a>
         </div>
-        <div class="desc">Bolt ile git. Yerel pazar, her şeyi tadabilirsin.</div>
-        <ul class="detail-list">
-            <li>🛒 <b>Alınacaklar:</b> Aşağıdaki "Ne Alınır" sekmesine bak.</li>
-        </ul>
+        <div class="desc"><b>Bolt ile en tepeye gidin.</b> (Yürüyerek çıkmayın). Şehri tepeden izleyin, Alev Kuleleri'ni ve Şehitler Hiyabanı'nı gezin. Sonra aşağı yürüyerek veya fünikülerle inin.</div>
+    </div>
+
+    <div class="timeline-block" style="border-left-color: #d32f2f;">
+        <span class="time-tag">12:00</span>
+        <div class="block-header">
+            <h3 class="block-title">Otelden Çıkış & Bavul Emanet</h3>
+        </div>
+        <div class="desc">Otele dönün, check-out yapın, bavulları resepsiyona bırakın. Şimdi özgürüz.</div>
     </div>
 
     <div class="timeline-block">
-        <span class="time-tag">12:30 - 15:00</span>
+        <span class="time-tag">13:00 - 17:30</span>
         <div class="block-header">
-            <h3 class="block-title">28 Mall veya Port Baku</h3>
+            <h3 class="block-title">Gezilecek Yer Seç (Alternatifli)</h3>
         </div>
+        <div class="desc">Uçağa kadar vaktimiz var. Aşağıdakilerden birini seçin:</div>
+        
         <div class="food-item">
             <div class="food-header">
-                <div class="food-info"><strong>28 Mall</strong><span>Normal AVM.</span></div>
-                <a href="https://www.google.com/maps/search/?api=1&query=28+Mall+Baku" target="_blank" class="map-link">Git</a>
+                <div class="food-info"><strong>A) Haydar Aliyev Merkezi</strong></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Heydar+Aliyev+Centre" target="_blank" class="map-link">Git</a>
             </div>
+            <div class="desc">Bolt ile gidin. Meşhur beyaz bina. Müze gezmek ve foto çekmek için.</div>
         </div>
+
         <div class="food-item">
             <div class="food-header">
-                <div class="food-info"><strong>Port Baku Mall</strong><span>Çok lüks markalar.</span></div>
-                <a href="https://www.google.com/maps/search/?api=1&query=Port+Baku+Mall" target="_blank" class="map-link">Git</a>
+                <div class="food-info"><strong>B) Tağıyev Sarayı (Tarih Müzesi)</strong></div>
+                <a href="https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipPeJl-nhie-g1k_gsTM90y62YAibp-tPoU1Y4ad!2e10!4m2!3m1!1s0x40307da4b2521c03:0x99a365765da8df61" target="_blank" class="map-link">Git</a>
             </div>
+            <div class="desc">Fevvareler meydanına yakın (yürünür). İçi altın varaklı, saray gibi bir ev.</div>
+        </div>
+
+        <div class="food-item">
+            <div class="food-header">
+                <div class="food-info"><strong>C) Hərbi Qənimətlər Parkı</strong></div>
+                <a href="https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOwSGjltLGpsJBYTJmXv696ndKjqfSViNxGSoIo!2e10!4m2!3m1!1s0x40307da4b2521c03:0x99a365765da8df61" target="_blank" class="map-link">Git</a>
+            </div>
+            <div class="desc">Savaş ganimetleri, tanklar, toplar açık havada sergileniyor.</div>
+        </div>
+        
+        <div class="food-item">
+            <div class="food-header">
+                <div class="food-info"><strong>D) Baku Eye & Deniz Mall</strong></div>
+                <a href="https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipNaLrowra2NTEkWim8pHr-tWo5R2iOh9HdnCW7w!2e10!4m2!3m1!1s0x40307da4b2521c03:0x99a365765da8df61" target="_blank" class="map-link">Git</a>
+            </div>
+            <div class="desc">Dönme dolap ve deniz kenarında AVM keyfi.</div>
         </div>
     </div>
 
